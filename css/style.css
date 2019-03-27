@@ -3,3 +3,32 @@
   margin: 0;
   padding: 0;
 }
+
+body{
+  background-image: url(../images/)../images
+}
+section{
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+section > img{
+  width: 70%;
+  margin: 50px auto;
+
+}
+div {
+  margin: 10px 20px;
+  text-align: center;
+  background-color: white;
+  border: solid black 5px;
+  border-radius: 100px;
+}
+
+div > h2{
+  margin: 20px auto;
+  font-size: 16px;
+}
+#guest{
+  margin-top: 120px;
+}
