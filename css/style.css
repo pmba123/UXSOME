@@ -5,12 +5,14 @@
 }
 
 body{
-  background-image: url(../images/)../images
+  background-image: url(../images/background.png);
+  background-size:contain;
 }
 section{
   display: flex;
   flex-direction: column;
   margin: 0 auto;
+  width: 100%;
 }
 section > img{
   width: 70%;
@@ -18,17 +20,34 @@ section > img{
 
 }
 div {
-  margin: 10px 20px;
-  text-align: center;
+  display: flex;
+  width: 90%;
+  height: 40%;
+  margin: 10px auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
   background-color: white;
-  border: solid black 5px;
+  border: solid white 1px;
   border-radius: 100px;
 }
 
 div > h2{
-  margin: 20px auto;
+
   font-size: 16px;
+  margin: 0 auto;
 }
 #guest{
   margin-top: 120px;
+}
+.icon{
+  float: left;
+  margin-left: 10px;
+  height: 10%;
+  width: 10%;
+}
+#email{
+  width: 20%;
 }
