@@ -9,12 +9,16 @@ const questions = {
   },
   2: {
     id:'2',
-    question: 'er det gode spørgsmål?',
+    question: 'Er det gode spørgsmål?',
+    option1: 'ja',
+    option2: 'måske',
+    opttion3: 'nix',
+  },
+  3: {
+    id:'2',
+    question: 'Hvorfor kan jeg ikke finde på flere spørgsmål?',
     option1: 'ja',
     option2: 'måske',
     opttion3: 'nix',
   }
-}
-$('#sprg1').append(
-  "<div>" + questions[0].question + "</div>"
-);
+};
