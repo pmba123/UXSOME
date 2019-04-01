@@ -58,7 +58,7 @@ div > a{
   width: 10%;
 }
 
-/*styling for themes*/
+/*styling for themes.html*/
 #logo-themes {
   width: 40%;
   margin: 10px auto;
@@ -84,14 +84,23 @@ margin-top:20px;
 }
 
 .themes > img {
-  width: 45%;
-  height: 100%;
+  width: 50%;
+  height: 50%;
   margin:0;
   padding: 10px;
+
 }
 
 #valg {
   margin: 40px auto;
   width: 30%;
   height: 50%;
+}
+
+/*styling for questions.html*/
+#question {
+  display:flex;
+  justify-content: center;
+
+
 }
