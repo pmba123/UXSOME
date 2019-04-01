@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="https://use.typekit.net/wnl5bca.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="images/klimaspil.png" type="image/png" sizes="16x16">
-<script src="JavaScript/main.js"></script>
+<!--<script src="JavaScript/main.js"></script> -->
 </head>
 <body>
 
@@ -16,9 +16,37 @@
 <img id="logo-themes" src="images/klimaspil.png" alt="logo">
 </section>
 
-<div id="1"></div>
-<div id="2"></div>
-<div id="3"></div>
+<div id="question">
+  
+</div>
+
+
+<script>
+let question = [
+  {
+    "question": "Er det nice i botanisk?",
+    "option1": "ja",
+    "option2": "måske",
+    "option3": "nix",
+  },
+  {
+    "question": "Er Lærke ikke bare sej",
+    "option1": "ja",
+    "option2": "måske",
+    "option3": "nix",
+  },
+  {
+    "question": "Hvad med Fie",
+    "option1": "ja",
+    "option2": "måske",
+    "option3": "nix",
+  },
+];
+
+  document.getElementById("question").innerHTML += question[0].question;
+
+
+</script>
 
 </body>
 </html>
