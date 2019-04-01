@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,45 +9,75 @@
   <link rel="stylesheet" href="https://use.typekit.net/wnl5bca.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="images/klimaspil.png" type="image/png" sizes="16x16">
-<!--<script src="JavaScript/main.js"></script> -->
+  <!--<script src="JavaScript/main.js"></script> -->
 </head>
+
 <body>
 
   <section>
-<img id="logo-themes" src="images/klimaspil.png" alt="logo">
-</section>
+    <img id="logo-themes" src="images/klimaspil.png" alt="logo">
+  </section>
 
-<div id="question">
-  
-</div>
+  <h2 id="question"></h2>
 
+  <div id="results"></div>
 
-<script>
-let question = [
-  {
-    "question": "Er det nice i botanisk?",
-    "option1": "ja",
-    "option2": "måske",
-    "option3": "nix",
-  },
-  {
-    "question": "Er Lærke ikke bare sej",
-    "option1": "ja",
-    "option2": "måske",
-    "option3": "nix",
-  },
-  {
-    "question": "Hvad med Fie",
-    "option1": "ja",
-    "option2": "måske",
-    "option3": "nix",
-  },
-];
+  <button class="options" id="o1"></button>
+  <button class="options" id="o2"></button>
+  <button class="options" id="o3"></button>
 
-  document.getElementById("question").innerHTML += question[0].question;
+  <button type="button" name="button" id="next">Videre</button>
 
 
-</script>
+  <script>
+//  funtion()
+    let questions = [
+      {
+        question: "Er det nice i botanisk?",
+        svar: {
+          option1: "ja",
+          option2: "måske",
+          option3: "nix"
+        },
+        correct: "option2"
+      },
+      {
+        question: "Er Lærke ikke bare sej",
+        svar: {
+          option1: "ja",
+          option2: "måske",
+          option3: "nix"
+        },
+        correct: "option3"
+      },
+      {
+        question: "Hvad med Fie",
+        svar: {
+          option1: "ja",
+          option2: "måske",
+          option3: "nix"
+        },
+        correct: "option3"
+      }
+    ];
+
+    console.log(questions);
+
+    document.getElementById("question").innerHTML += questions[0].question;
+    document.getElementById("o1").innerHTML += questions[0].svar.option1;
+    document.getElementById("o2").innerHTML += questions[0].svar.option2;
+    document.getElementById("o3").innerHTML += questions[0].svar.option3;
+
+  //  for (var i = 0; i < questions.length; i++) {
+//      document.getElementById("question").innerHTML += questions[i].question;
+//    }
+
+    function changeText() {
+
+    }
+
+  </script>
 
 </body>
+
 </html>
