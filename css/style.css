@@ -21,6 +21,7 @@ section > img {
   width: 70%;
   margin: 20px auto;
 }
+<<<<<<< Updated upstream
 
   #logo-themes {
     width: 40%;
@@ -32,6 +33,10 @@ section > img {
 display: flex;
   background-color: white;
   border-radius: 100px;
+=======
+.log-ind {
+  display: flex;
+>>>>>>> Stashed changes
   width: 90%;
   height: 40%;
   margin: 10px auto;
