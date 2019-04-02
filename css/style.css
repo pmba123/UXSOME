@@ -17,11 +17,11 @@ section{
   width: 100%;
 }
 
-section > img {
+#frontpage-logo {
   width: 70%;
   margin: 20px auto;
 }
-<<<<<<< Updated upstream
+
 
   #logo-themes {
     width: 40%;
