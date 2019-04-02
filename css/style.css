@@ -1,4 +1,4 @@
-*{
+ *{
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -9,19 +9,29 @@ body{
   background-image: url(../images/background.png);
   background-size: cover;
 }
+
 section{
   display: flex;
   flex-direction: column;
   margin: 0 auto;
   width: 100%;
 }
-section > img{
+
+section > img {
   width: 70%;
   margin: 20px auto;
-
 }
-div {
-  display: flex;
+
+  #logo-themes {
+    width: 40%;
+    margin: 0px auto;
+  }
+
+
+.login {
+display: flex;
+  background-color: white;
+  border-radius: 100px;
   width: 90%;
   height: 40%;
   margin: 10px auto;
@@ -30,27 +40,33 @@ div {
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  background-color: white;
   border: solid white 1px;
-  border-radius: 100px;
 }
-
-div > h2{
+.login > h2 {
   font-size: 16px;
-  margin-left: 30px;
   font-weight: normal;
-}
-#guest{
-  margin-top: 50px;
-  width: 50%;
-  padding: 20px;
-}
-div > a{
-  font-size: 16px;
   text-decoration: none;
   color:black;
-  margin: 0 auto;
+  margin-left: 30px;
+
 }
+
+#guest{
+  margin: 0 auto;
+  margin-top: 50px;
+
+  width: 50%;
+  padding: 20px;
+  background: #DF8600;
+  border-radius: 100px;
+  text-align: center;
+}
+#guest > a {
+  text-decoration: none;
+  color: white;
+}
+
+
 .icon{
   float: left;
   margin-left: 10px;
@@ -58,76 +74,131 @@ div > a{
   width: 10%;
 }
 
-/*styling for themes.html*/
-#logo-themes {
-  width: 40%;
-  margin: 10px auto;
-  margin-bottom: 10px;
+
+
+
+#quiz-controls, #quiz-counter, #quiz-results-screen {
+  text-align: center;
 }
 
-#h2-themes {
+#quiz-counter {
   color: white;
-  font-size:18px;
-  text-align:center;
-  margin: 5px auto;
-  font-weight:400;
-  padding-bottom: 10px;
+
 }
 
-.themes {
-width: 90%;
-margin-top:20px;
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  flex-wrap: wrap;
+#quiz-results, .question {
+  font-size: 1.25em;
+  text-align: center;
+  color: white;
+  margin: 50px;
+  font-weight: bold;
 }
 
-.themes > img {
-  width: 50%;
-  height: 50%;
-  margin:0;
+.quiz-container {
+  padding: 1em;
+  width: 100%;
+  text-align: center;
+}
+
+.quiz-container a {
+  text-decoration: none;
+}
+
+.answers {
+  list-style: none;
+  padding: 0;
+}
+
+.answers a {
+  display: block;
+  padding: 20px;
+  margin-bottom: .5em;
+  background: darkgreen;
+  border-radius: 100px;
+  color: white;
+}
+
+.answers a.correct {
+  background: #13E213;
+}
+
+.answers a.incorrect {
+  background: #c00;
+}
+
+#quiz-buttons a, #quiz-controls, .quiz-container .quiz-button {
   padding: 10px;
-
+  color: #fff;
+  border-radius: 100px;
+}
+#quiz-buttons > #quiz-next-btn {
+  margin: 20px;
+  width: 50%;
+  padding: 20px;
+}
+#quiz-buttons > #quiz-finish-btn {
+  margin: 20px;
+  width: 50%;
+  padding: 20px;
 }
 
-#valg {
-  margin: 40px auto;
-  width: 30%;
-  height: 50%;
-}
-
-/*styling for questions.html*/
-
-#results{
-  display: none;
-}
-#question {
-  background-color: none;
-  display:flex;
-  justify-content: center;
-  color: white;
-  margin-bottom:80px;
-}
-#next{
-  display: none;
-  justify-content: center;
-  width: 20%;
-  background-color: white;
-  border: solid white 1px;
-  border-radius:100px;
-  padding: 5px;
-  margin: 100px auto;
-}
-.options {
-  color:white;
+#quiz-start-screen {
   display: flex;
-  justify-content: center;
-  background-color: #008B0F;
-  border: solid #008B0F 4px;
-  border-radius:100px;
-  width: 80%;
-  padding: 15px;
-  margin: 20px auto;
-  font-size: 16px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+#quiz-start-screen > a {
+  width: 50%;
+}
+#quiz-start-screen > a > img {
+  width: 100%;
+}
+
+#scenarie-container {
+  width: 100%;
+  color: white;
+  margin-bottom: 30px;
+
+}
+#choose {
+  width: 50%;
+  text-decoration: none;
+  background: #DF8600;
+  border-radius: 100px;
+  padding: 20px;
+  margin: 0 auto;
+  margin-top: 20px;
+
+}
+
+
+#choose a {
+  color: white;
+}
+.choose-btn {
+  width: 100%;
+}
+
+.answers a.correct, .answers a.incorrect {
+  color: #fff;
+}
+
+#quiz-buttons a, .quiz-container .quiz-button {
+  display: inline-block
+}
+
+#quiz-buttons a {
+  background: #DF8600;
+  color: white;
+}
+
+.quiz-results-state #quiz-controls {
+  background: 0 0;
+  padding: 0
+}
+
+.quiz-results-state #quiz-buttons a {
+  background: #333;
+  color: #fff
 }

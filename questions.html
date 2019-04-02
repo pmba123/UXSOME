@@ -1,83 +1,117 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<!doctype html>
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Klimaspillet</title>
-  <link rel="stylesheet" href="https://use.typekit.net/wnl5bca.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="icon" href="images/klimaspil.png" type="image/png" sizes="16x16">
-  <!--<script src="JavaScript/main.js"></script> -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Customizable Dynamic Quiz Basic Demo</title>
+  <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
-
 <body>
 
   <section>
-    <img id="logo-themes" src="images/klimaspil.png" alt="logo">
-  </section>
+<img id="logo-themes" src="images/klimaspil.png" alt="logo">
+</section>
 
-  <h2 id="question"></h2>
+  <div class="quiz-container">
+<div id="quiz">
 
-  <div id="results"></div>
+  <div id="quiz-start-screen">
 
-  <button class="options" id="o1"></button>
-  <button class="options" id="o2"></button>
-  <button class="options" id="o3"></button>
-
-  <button type="button" name="button" id="next">Videre</button>
+    <div id="scenarie-container"><h2 id="h2-themes">Vælg scenarie</h2></div>
 
 
-  <script>
-//  funtion()
-    let questions = [
+    <a href="#" id="quiz-start-btn" class="quiz-button"> <img src="images/pollution.png" alt="pollution"></a>
+    <a href="#" id="no-function-btn" class="quiz-button"> <img src="images/native.png" alt="native"></a>
+    <a href="#" id="no-function-btn" class="quiz-button"> <img src="images/food.png" alt="food"></a>
+    <a href="#" id="no-function-btn" class="quiz-button"> <img src="images/agriculture.png" alt="agriculture"></a>
+    <div id="choose"><a href="questions" class="choose-btn" id="quiz-start-btn">Vælg for mig</a></div>
+
+  </div>
+
+</div>
+</div>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+<script src="JavaScript/main.js"></script>
+<script>
+  $('#quiz').quiz({
+    //resultsScreen: '#results-screen',
+    //counter: false,
+    //homeButton: '#custom-home',
+    counterFormat: 'Spørgsmål %current af %total',
+    questions: [
       {
-        question: "Er det nice i botanisk?",
-        svar: {
-          option1: "ja",
-          option2: "måske",
-          option3: "nix"
-        },
-        correct: "option2"
+        'q': 'Er der nice i botanisk?',
+        'options': [
+          'Nej',
+          'Ja',
+          'Sådan ok',
+        ],
+        'correctIndex': 0,
+        'correctResponse': 'Du er sgu en sej gut',
+        'incorrectResponse': 'Øv bøv'
       },
       {
-        question: "Er Lærke ikke bare sej",
-        svar: {
-          option1: "ja",
-          option2: "måske",
-          option3: "nix"
-        },
-        correct: "option3"
+        'q': 'A smaple question?',
+        'options': [
+          'Answer 1',
+          'Answer 2'
+        ],
+        'correctIndex': 1,
+        'correctResponse': 'Nice gået',
+        'incorrectResponse': 'Kom igen'
       },
       {
-        question: "Hvad med Fie",
-        svar: {
-          option1: "ja",
-          option2: "måske",
-          option3: "nix"
-        },
-        correct: "option3"
+        'q': 'A smaple question?',
+        'options': [
+          'Answer 1',
+          'Answer 2',
+          'Answer 3',
+          'Answer 4'
+        ],
+        'correctIndex': 2,
+        'correctResponse': 'RIGTIGT',
+        'incorrectResponse': 'Bedre held næste gang'
+      },
+      {
+        'q': 'A smaple question?',
+        'options': [
+          'Answer 1',
+          'Answer 2'
+        ],
+        'correctIndex': 1,
+        'correctResponse': 'Custom correct response.',
+        'incorrectResponse': 'Custom incorrect response.'
+      },
+      {
+        'q': 'A smaple question?',
+        'options': [
+          'Answer 1',
+          'Answer 2',
+          'Answer 3',
+          'Answer 4'
+        ],
+        'correctIndex': 3,
+        'correctResponse': 'Custom correct response.',
+        'incorrectResponse': 'Custom incorrect response.'
       }
-    ];
-
-    console.log(questions);
-
-    document.getElementById("question").innerHTML += questions[0].question;
-    document.getElementById("o1").innerHTML += questions[0].svar.option1;
-    document.getElementById("o2").innerHTML += questions[0].svar.option2;
-    document.getElementById("o3").innerHTML += questions[0].svar.option3;
-
-  //  for (var i = 0; i < questions.length; i++) {
-//      document.getElementById("question").innerHTML += questions[i].question;
-//    }
-
-    function changeText() {
-
-    }
-
-  </script>
-
+    ]
+  });
+</script>
 </body>
+<script type="text/javascript">
 
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
 </html>
