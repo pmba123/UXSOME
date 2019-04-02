@@ -203,3 +203,46 @@ display: flex;
   background: #333;
   color: #fff
 }
+
+
+/*MEDIAQUERIES*/
+
+@media (min-width: 768px) {
+  #frontpage-logo {
+    width: 50%;
+  }
+
+  .login {
+    width: 70%;
+  }
+
+  #guest {
+    width:30%;
+  }
+
+  #quiz-start-screen {
+    width: 90%;
+    margin:0 auto;
+  }
+
+  .quiz-button {
+    padding: 20px;
+  }
+
+  .quiz-container {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .answers {
+    margin: 30px;
+  }
+
+  #quiz-counter {
+    font-size: 20px;
+  }
+
+  .question {
+    font-size: 2em;
+  }
+}
