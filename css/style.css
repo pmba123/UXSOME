@@ -24,7 +24,7 @@ section{
 
 
   #logo-themes {
-    width: 40%;
+    width: 35%;
     margin: 0px auto;
   }
 
@@ -75,8 +75,23 @@ display: flex;
   width: 10%;
 }
 
-
-
+.scenarie-btn {
+  padding: 15px;
+  margin-bottom: .5em;
+  background: darkgreen;
+  border-radius: 100px;
+  color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  height: 78px;
+}
+.scenarie-icon {
+  width: 15%;
+}
+.scenarie-btn > .quiz-button {
+  margin: 0 auto;
+}
 
 #quiz-controls, #quiz-counter, #quiz-results-screen {
   text-align: center;
@@ -91,7 +106,7 @@ display: flex;
   font-size: 1.25em;
   text-align: center;
   color: white;
-  margin: 50px;
+  margin: 40px;
   font-weight: bold;
 }
 
@@ -200,9 +215,15 @@ display: flex;
 }
 
 .quiz-results-state #quiz-buttons a {
-  background: #333;
-  color: #fff
+  width: 50%;
+  text-decoration: none;
+  background: #DF8600;
+  border-radius: 100px;
+  padding: 20px;
+  margin: 0 auto;
+  margin-top: 20px;
 }
+
 
 
 /*MEDIAQUERIES*/

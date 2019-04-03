@@ -99,7 +99,7 @@
     startButton: "#quiz-start-btn",
     homeButton: "#quiz-home-btn",
     resultsScreen: "#quiz-results-screen",
-    resultsFormat: "You got %score out of %total correct!",
+    resultsFormat: "Du fik %score ud af %total rigtige!",
     gameOverScreen: "#quiz-gameover-screen",
     nextButtonText: "Videre",
     finishButtonText: "Færdig",
