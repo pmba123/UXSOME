@@ -271,6 +271,7 @@ display: flex;
 /*STYLING FOR INFORSIDE*/
 #body-infoside {
   background-color: #458207;
+  background-image: linear-gradient(-90deg, #458207, #2ae02e);
 }
 
 #logo-info-container {
@@ -280,5 +281,9 @@ margin: 0 auto;
 
 #logo-infoside-img {
   width: 100%;
+}
 
+#instagram-container {
+width: 90%;
+margin: 0 auto;
 }
