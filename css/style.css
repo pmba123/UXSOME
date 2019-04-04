@@ -272,3 +272,13 @@ display: flex;
 #body-infoside {
   background-color: #458207;
 }
+
+#logo-info-container {
+width: 30%;
+margin: 0 auto;
+}
+
+#logo-infoside-img {
+  width: 100%;
+
+}
