@@ -226,7 +226,7 @@ display: flex;
 
 
 
-/*MEDIAQUERIES*/
+/*MEDIAQUERIES FOR IPAD*/
 
 @media (min-width: 768px) {
   #frontpage-logo {
