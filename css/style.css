@@ -267,3 +267,8 @@ display: flex;
     font-size: 2em;
   }
 }
+
+/*STYLING FOR INFORSIDE*/
+#body-infoside {
+  background-color: #458207;
+}
