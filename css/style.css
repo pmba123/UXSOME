@@ -5,12 +5,17 @@
   font-family: 'Acumin', sans-serif;
 }
 
+@@font-face {
+  font-family: 'Au Passata'
+  src: url('Font/AUPassata_Rg.ttf');
+}
+
 .body-quest-index{
   background-image: url(../images/background.png);
   background-size: cover;
 }
 
-section{
+section {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
@@ -27,7 +32,6 @@ section{
     width: 35%;
     margin: 0px auto;
   }
-
 
 .login {
 display: flex;
@@ -119,7 +123,6 @@ display: flex;
 
 .quiz-container a {
   text-decoration: none;
-
 }
 
 .answers {
@@ -189,9 +192,7 @@ display: flex;
   padding: 20px;
   margin: 0 auto;
   margin-top: 20px;
-
 }
-
 
 #choose a {
   color: white;
@@ -228,7 +229,88 @@ display: flex;
   margin-top: 20px;
 }
 
+/*STYLING FOR INFORSIDE*/
+#body-infoside {
+  background-color: #458207;
+  background-image: radial-gradient(#5AC900, #43B929, #458207);
+}
 
+#wrapper {
+  width: 100%;
+  margin: 0px auto;
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#instructions-container {
+  margin-left: 50px;
+}
+
+#instructions-container > ol{
+    margin-left: 50px;
+
+}
+
+#instructions-list {
+color: #FFF;
+padding-top: 60px;
+font-size: 18px;
+}
+
+#instructions-list > li{
+  font-family:'AUPassata_Rg' sans-serif;
+}
+
+#iphones-container {
+  padding: 100px;
+}
+
+#iphones-img {
+  width: 100%;
+}
+
+#instagram-container {
+margin-right: 50px;
+}
+
+#h2-info {
+  color: #FFF;
+  text-align: center;
+  margin: 0 auto;
+}
+
+#download-wrapper {
+  width: 500px;
+  margin: 5px auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: columns;
+  cursor: pointer;
+}
+
+.download-buttons:hover {
+  box-shadow: 0px 2px 20px;
+}
+
+.download-buttons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 2px solid white;
+  border-radius: 100px;
+  background-color: #FFF;
+  width: 210px;
+  padding: 0.5em;
+  margin: 0.5em;
+
+}
+
+.download-txt {
+  font-size: 12px;
+  text-align: center;
+}
 
 /*MEDIAQUERIES FOR IPAD*/
 
@@ -270,29 +352,4 @@ display: flex;
   .question {
     font-size: 2em;
   }
-}
-
-/*STYLING FOR INFORSIDE*/
-#body-infoside {
-  background-color: #458207;
-  background-image: linear-gradient(-90deg, #458207, #2ae02e);
-}
-
-#logo-info-container {
-width: 30%;
-margin: 0 auto;
-}
-
-#logo-infoside-img {
-  width: 100%;
-}
-
-#instagram-container {
-width: 300px;
-margin: 0 auto;
-}
-
-#h2-info {
-  color: #FFF;
-  text-align: center;
 }
