@@ -2,11 +2,11 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Acumin', sans-serif;
+  font-family: 'Acumin', 'Au Passata', sans-serif;
 }
 
-@@font-face {
-  font-family: 'Au Passata'
+@font-face {
+  font-family: 'Au Passata';
   src: url('Font/AUPassata_Rg.ttf');
 }
 
@@ -29,7 +29,7 @@ section {
 
 
   #logo-themes {
-    width: 35%;
+    width: 45%;
     margin: 0px auto;
   }
 
@@ -260,7 +260,7 @@ font-size: 18px;
 }
 
 #instructions-list > li{
-  font-family:'AUPassata_Rg' sans-serif;
+  font-family:'Au Passata' sans-serif;
 }
 
 #iphones-container {
@@ -310,6 +310,8 @@ margin-right: 50px;
 .download-txt {
   font-size: 12px;
   text-align: center;
+  color:black;
+  text-decoration: none;
 }
 
 /*MEDIAQUERIES FOR IPAD*/
