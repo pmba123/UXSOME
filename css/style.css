@@ -13,7 +13,7 @@
 .body-quest-index{
   background-image: url(../images/background.png);
   background-size: cover;
-  padding-top: 25px;
+  margin-top: 40px;
 }
 
 section {
