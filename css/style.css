@@ -13,7 +13,6 @@
 .body-quest-index{
   background-image: url(../images/background.png);
   background-size: cover;
-  margin-top: 40px;
 }
 
 section {
@@ -120,6 +119,8 @@ display: flex;
 .quiz-container {
   width: 100%;
   text-align: center;
+  margin-top: 40px;
+
 }
 
 .quiz-container a {
