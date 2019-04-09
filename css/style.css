@@ -243,17 +243,19 @@ display: flex;
   width: 100%;
   margin: 0 auto;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
 
 #instructions-container {
-  margin-left: 50px;
+  width: 25%;
+
+
 }
 
 #instructions-container > ol{
-    margin-left: 50px;
-
+  margin-left: 40px;
 }
 
 #instructions-list {
@@ -267,7 +269,8 @@ font-size: 18px;
 }
 
 #iphones-container {
-  padding: 100px;
+  padding: 20px;
+  width: 50%;
 }
 
 #iphones-img {
@@ -275,7 +278,7 @@ font-size: 18px;
 }
 
 #instagram-container {
-margin-right: 50px;
+  width: 25%;
 }
 
 #h2-info {
@@ -285,7 +288,7 @@ margin-right: 50px;
 }
 
 #download-wrapper {
-  width: 500px;
+  width: 100%;
   margin: 5px auto;
   display: flex;
   justify-content: center;
@@ -314,6 +317,7 @@ margin-right: 50px;
   font-size: 12px;
   text-align: center;
   text-decoration: none;
+  color: black;
 }
 
 /*MEDIAQUERIES FOR IPAD*/
